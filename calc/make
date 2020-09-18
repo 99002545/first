@@ -1,6 +1,6 @@
 
  #Name of the project
-PROJECT_NAME = Cal
+PROJECT_NAME = Calc
 
 # Output directory
 BUILD = build
