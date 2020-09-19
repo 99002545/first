@@ -1,24 +1,27 @@
-#include <calculator_operations.h>
 
-int add(int operand1, int operand2)
-{
-    return operand1 + operand2;
-}
 
-int subtract(int operand1, int operand2)
-{
-    return operand1 - operand2;
-}
 
-int multiply(int operand1, int operand2)
+//function start
+double cal(double val1, double val2, char ope)
 {
-    return operand1 * operand2;
-}
-
-int divide(int operand1, int operand2)
-{
-    if(0 == operand2)
-        return 0;
-    else
-        return operand1 / operand2;
-}
+ if(ope == '+')
+ {
+ printf("Addition of two numbers is %lf ", val1 + val2);
+ }
+ else if(ope == '-')
+ {
+ printf("Subtraction of two numbers is %lf ", val1 - val2);
+ }
+ else if(ope == '*')
+ {
+ printf("Multiplication of two numbers is %lf ", val1 * val2); 
+ }
+ else if(ope == '/')
+ {
+ printf("Division of two numbers is %lf ", val1 / val2);
+ }
+ else
+ {
+ printf("Invalid operator");
+ }
+} //function end
